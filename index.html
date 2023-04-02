@@ -8,31 +8,41 @@
     <title>Calc.</title>
   </head>
   <body>
+    <div class="calc">
     <div class="displayScreen">
       <input type="text" id="result" readonly />
     </div>
     <div class="keyButton">
-      <input type="button" onclick="inputValue('(')" value="(" />
-      <input type="button" onclick="inputValue(')')" value=")" />
-      <input type="button" onclick="backspaceButton('AC')" value="C" />
-      <input type="button" onclick="clearButton()" value="AC" />
-      <input type="button" onclick="inputValue('7')" value="7" />
-      <input type="button" onclick="inputValue('7')" value="8" />
-      <input type="button" onclick="inputValue('7')" value="9" />
-      <input type="button" onclick="inputValue('/')" value="/" />
-      <input type="button" onclick="inputValue('4')" value="4" />
-      <input type="button" onclick="inputValue('5')" value="5" />
-      <input type="button" onclick="inputValue('6')" value="6" />
-      <input type="button" onclick="inputValue('*')" value="x" />
-      <input type="button" onclick="inputValue('1')" value="1" />
-      <input type="button" onclick="inputValue('2')" value="2" />
-      <input type="button" onclick="inputValue('3')" value="3" />
-      <input type="button" onclick="inputValue('-')" value="-" />
-      <input type="button" onclick="inputValue('0')" value="0" />
-      <input type="button" onclick="inputValue('.')" value="." />
-      <input type="button" onclick="calculate()" value="=" />
-      <input type="button" onclick="inputValue('+')" value="+" />
+      <div class="key-row">
+        <input class="ac-key" type="button" onclick="clearButton()" value="AC" />
+        <input class="numbers-key" type="button" onclick="inputValue('%')" value="%" />
+        <input class="expressions-key" type="button" onclick="inputValue('÷')" value="÷" />
+      </div>
+      <div class="key-row">
+        <input class="numbers-key" type="button" onclick="inputValue('7')" value="7" />
+        <input class="numbers-key" type="button" onclick="inputValue('8')" value="8" />
+        <input class="numbers-key" type="button" onclick="inputValue('9')" value="9" />
+        <input class="expressions-key" type="button" onclick="inputValue('x')" value="x" />
+      </div>
+      <div class="key-row">
+        <input class="numbers-key" type="button" onclick="inputValue('4')" value="4" />
+        <input class="numbers-key" type="button" onclick="inputValue('5')" value="5" />
+        <input class="numbers-key" type="button" onclick="inputValue('6')" value="6" />
+        <input class="expressions-key" type="button" onclick="inputValue('-')" value="-" />
+      </div>
+      <div class="key-row">
+        <input class="numbers-key" type="button" onclick="inputValue('1')" value="1" />
+        <input class="numbers-key" type="button" onclick="inputValue('2')" value="2" />
+        <input class="numbers-key" type="button" onclick="inputValue('3')" value="3" />
+        <input class="expressions-key" type="button" onclick="inputValue('+')" value="+" />
+      </div>
+      <div class="key-row">
+        <input class="zero-key" type="button" onclick="inputValue('0')" value="0" />
+        <input class="numbers-key" type="button" onclick="inputValue('.')" value="." />
+        <input class="expressions-key" type="button" onclick="calculate()" value="=" />
+      </div>
     </div>
+  </div>
   </body>
   <footer>
     <script src="/calculator.js"></script>
