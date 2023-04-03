@@ -21,7 +21,8 @@ function calculate() {
     return;
   }
   let neutralizeValue = proceeds.replace(/x/, "*").replace(/÷/, "/");
-  result.value = eval(neutralizeValue);
+  let total = (result.value = eval(neutralizeValue));
+  result.value = total.toFixed(2);
   proceeds = result.value;
   isCalculated = true;
 }
