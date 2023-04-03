@@ -16,16 +16,12 @@ function clearButton() {
   result.value = "";
 }
 
-function backspaceButton() {
-  proceeds = proceeds.slice(0, -1);
-  result.value = proceeds;
-}
-
 function calculate() {
   if (isCalculated) {
     return;
   }
-  result.value = eval(proceeds);
+  let neutralizeValue = proceeds.replace(/x/, "*").replace(/÷/, "/");
+  result.value = eval(neutralizeValue);
   proceeds = result.value;
   isCalculated = true;
 }
