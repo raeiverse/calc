@@ -7,6 +7,21 @@ function inputValue(input) {
     isCalculated = false;
     value = "";
   }
+  if (
+    (input === "%" ||
+      input === "÷" ||
+      input === "x" ||
+      input === "-" ||
+      input === "+") &&
+    (proceeds.endsWith("%") ||
+      proceeds.endsWith("÷") ||
+      proceeds.endsWith("x") ||
+      proceeds.endsWith("-") ||
+      proceeds.endsWith("+"))
+  ) {
+    // do nothing if the previous input was an operator
+    proceeds = proceeds.slice(0, -1);
+  }
   proceeds += input;
   result.value = proceeds;
 }
