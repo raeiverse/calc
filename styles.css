@@ -37,38 +37,52 @@
 .ac-key {
   width: 50.3%;
   height: 70px;
-  background-color: #5f6368;
+  background-color: gray;
   font-size: 28px;
   color: white;
   margin-right: 2px;
   border: none;
+}
+.ac-key:hover {
+  background-color: darkgrey;
 }
 
 .numbers-key {
   width: 25%;
   height: 70px;
-  background-color: #5f6368;
+  background-color: gray;
   font-size: 28px;
   color: white;
   margin-right: 2px;
   border: none;
+}
+
+.numbers-key:hover {
+  background-color: darkgrey;
 }
 
 .zero-key {
   width: 50.3%;
   height: 70px;
-  background-color: #5f6368;
+  background-color: gray;
   font-size: 28px;
   color: white;
   margin-right: 2px;
   border: none;
 }
+.zero-key:hover {
+  background-color: darkgrey;
+}
 
 .expressions-key {
   width: 24%;
   height: 70px;
-  background-color: rgba(255, 127, 39, 1);
+  background-color: darkorange;
   font-size: 28px;
   color: white;
   border: none;
+}
+
+.expressions-key:hover {
+  background-color: orange;
 }
