@@ -37,7 +37,7 @@ function calculate() {
   }
   let neutralizeValue = proceeds.replace(/x/, "*").replace(/÷/, "/");
   let total = (result.value = eval(neutralizeValue));
-  result.value = Number.isInteger(total) ? total : total.toFixed(2);
+  result.value = Number.isInteger(total) ? total : total;
   proceeds = result.value;
   isCalculated = true;
 }
